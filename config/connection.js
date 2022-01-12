@@ -1,6 +1,6 @@
-// import seqelize constructor from library
-const { Sequelize } = require('sequelize');
-const sequelize = require('sequelize');
+// import sequelize constructor from library
+//const { Sequelize } = require('sequelize');
+const Sequelize = require('sequelize');
 
 // create connection to our database, pass in your MySQL information for username and password
 const sequelize = new Sequelize('just_tech_news_db', 'username', 'password', {
