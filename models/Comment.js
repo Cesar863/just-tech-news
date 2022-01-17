@@ -9,6 +9,7 @@ Comment.init(
         // columns will go here
         id: { 
         type: DataTypes.INTEGER,
+        allowNull: false,
         primaryKey: true,
         autoInctrement: true,
         },
@@ -16,10 +17,6 @@ Comment.init(
         comment_text: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            references: {
-                model: 'comment',
-                key: "text"
-            },
             validate: {
                 len: [1]
             }
